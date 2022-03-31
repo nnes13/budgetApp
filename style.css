@@ -66,8 +66,6 @@ body {
 }
 
 
-@media(min-width: 1124px){
-
 /* Content Starts Here
 ======================= */
 
@@ -89,8 +87,6 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .enteredValues {
     display: flex;
@@ -192,20 +188,60 @@ input {
     line-height: 1.5em;
 }
 
-}
+/* Tablet View
+======================= */
 
 @media (max-width: 1123px) {
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
 
-/* Header
-======================= */
-header {
-    text-align: center;
-    padding-bottom: 2%;
-    font-size: 2em;
-    font-weight: 700;
+    .enteredValues {
+        display: flex;
+        width: 100%;
+    }
+
+    .displayedValues {
+        width: 100%;
+    }
+    .displayedValues {
+        padding: 2%;
+    }
+    .amount {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
 }
-    
 
+/* Phone Size
+======================= */
 
-
+@media (max-width: 585px) {
+    .displayedValues {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 2%;    
+    }
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .enteredValues {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .budget {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .expense {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .displayedExpenses h2 {
+        text-align: center;
+    }
 }
