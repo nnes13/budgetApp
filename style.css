@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start CSS Here
+==================== */
+
+
+
+/* General Stuff
+==================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:blanchedalmond;
+    margin: 2% 5% 2% 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media(min-width: 1124px){
+
+/* Content Starts Here
+======================= */
+
+
+/* Header
+======================= */
+header {
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+
+
+/* Budget Forms
+======================= */
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.enteredValues {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 2%;
+}
+
+.formTitle {
+    padding-bottom: 2%;
+}
+
+.budget {
+    text-align: center;
+    margin-right: 2.5%;
+    width: 40%;
+}
+
+.expense {
+    text-align: center;
+    margin-left:2.5%;
+    width: 40%;
+}
+
+.budgetForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+h2 {
+    font-size: 1.5em;
+    
+}
+
+input {
+    padding: 3%;
+    margin-bottom: 3%;
+    font-size: 1em;
+}
+
+.enter {
+    width: 50%;
+    padding: 2%;
+    margin: auto;
+    font-size: 1em;
+}
+
+/* Displayed Values
+======================= */
+
+.displayedValues {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;    
+}
+
+.valueBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amountTitle {
+    font-size: 1.5em;
+}
+
+.amount {
+    font-size: 2.5em;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+.icon {
+    width: 30%;
+}
+
+.displayedExpenses {
+    padding-top: 50px;
+}
+
+.expenseTitle {
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.displayedExpenses h2 {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+}
+
+@media (max-width: 1123px) {
+
+/* Header
+======================= */
+header {
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: 2em;
+    font-weight: 700;
+}
+    
+
+
+
+}

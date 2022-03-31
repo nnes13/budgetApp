@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Budget App</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Simple Budget Calculator</h1>
+    </header>
+    <main>
+        <div class="flexContainer">
+       
+            <section class="enteredValues">
+                <section class="budget">
+                    <h2 class="formTitle">Enter Your Budget: </h2>
+                    <form class="budgetForm">
+                        <input class="budgetText" type="number" placeholder="Budget Amount $" name="budget">
+                        <button class="enter budgetSubmit">Enter</button>
+                    </form>
+                </section>
+                <section class="expense">
+                    <h2 class="formTitle">Enter an Expense: </h2>
+                    <form class="budgetForm">
+                        <input class="expenseName" type="text" name="expenseName" placeholder="Expense Name:">
+                        <input class="expenseText" type="number" placeholder="Expense Amount $" name="expense">
+                        <button class="enter expenseSubmit">Enter</button>
+                    </form>
+                </section>
+            </section>
+
+            <section class="displayedValues">
+                <section class="valueBox">
+                    <h2 class="amountTitle">Total Budget:</h2>
+                    <span class="budgetAmount amount positive">$</span>
+                    <img class="icon" src="/img/budget.png">
+                </section>
+                <section class="valueBox">
+                    <h2 class="amountTitle">Total Expenses: </h2>
+                    <span id="test" class="expenseAmount amount negative">-$</span>
+                    <img class="icon" src="/img/expense.png">
+                </section>
+                <section class="valueBox">
+                    <h2 class="amountTitle">Balance:</h2>
+                    <span class="total amount">$</span>
+                    <img class="icon" src="/img/balance.png">
+                </section>            
+            </section>
+
+        </div>
+        <section class="displayedExpenses">
+            <h2 class="expenseTitle">Expenses:</h2>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
