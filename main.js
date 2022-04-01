@@ -1,5 +1,5 @@
 //Fills in the budget from the local storage
-document.querySelector('.budgetAmount').innerText = localStorage.getItem('currentBudget').slice(1,-1); 
+//document.querySelector('.budgetAmount').innerText = localStorage.getItem('currentBudget').slice(1,-1); 
 
 //When button is clicked for budget
 document.querySelector('.budgetSubmit').addEventListener('click', function(event){
@@ -15,8 +15,8 @@ document.querySelector('.budgetSubmit').addEventListener('click', function(event
     calcBalance();
 
     //Stores the budget value in the local storage in the browser
-    let storedBudget = document.querySelector('.budgetAmount').innerText;
-    localStorage.setItem('currentBudget', JSON.stringify(storedBudget));
+    //let storedBudget = document.querySelector('.budgetAmount').innerText;
+    //localStorage.setItem('currentBudget', JSON.stringify(storedBudget));
 });
 
 
