@@ -173,10 +173,6 @@ input {
     width: 30%;
 }
 
-.displayedExpenses {
-    padding-top: 50px;
-}
-
 .expenseTitle {
     font-weight: 700;
     font-size: 2em;
@@ -186,7 +182,21 @@ input {
 .displayedExpenses h2 {
     text-align: left;
     line-height: 1.5em;
+    padding-left: 10px;
 }
+
+.expenseContainer {
+    display: flex;
+    margin-top: 3%;
+}
+
+.deleteCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+
 
 /* Tablet View
 ======================= */
